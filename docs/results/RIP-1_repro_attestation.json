@@ -1,0 +1,376 @@
+{
+ "experiment": "RIP-1 sandboxed protocol reproduction (audit R1-03)",
+ "synthetic_only": true,
+ "commit": "686089689af4733a25200fa81502159b207ca36a",
+ "date_utc": "2026-11-18T13:05:49+00:00",
+ "criterion": "all checks true per run (fixed in advance, FD-01-D45 \u00a73.5c)",
+ "runs": [
+  {
+   "run": "V0_log_returns",
+   "view": "V0",
+   "representation": "log_returns",
+   "inputs_sha256": {
+    "data_log_returns.npz": "7ad29bed74b9f36a19db88d82fd8f58526ffba5a2787aba6e404d9d0144e139b",
+    "input.json": "67a4950d34108c49943206f3bbb0ad7555b863d3c98dfe1993131b7b4e5eb155"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "58941e36daf690e25370a463cae4c96293f67b0eeb5683f595e24a6a5cb540c3",
+   "reproduced_output_file_sha256": "2b0973814fd411ebdb29e3ca1220ad14cb41c88c28ed5b06e4d46c3b95edf6a8",
+   "reproduced_predictions_sha256": "940ea25a3a822f6bb4a8e45350728aeb5684f41aec85bc0076b50384140640c1",
+   "original_predictions_sha256": "940ea25a3a822f6bb4a8e45350728aeb5684f41aec85bc0076b50384140640c1",
+   "original_predictions_file_sha256": "2b0973814fd411ebdb29e3ca1220ad14cb41c88c28ed5b06e4d46c3b95edf6a8",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V0_tick_grid",
+   "view": "V0",
+   "representation": "tick_grid",
+   "inputs_sha256": {
+    "data_tick_grid.npz": "59d59937d6a797c5db54f8e05e89ede844c29b437b9846ddbc0878f14e2d4c44",
+    "input.json": "cdb09f4634e697a8f47ac6ad2452bb074bd66362e8cd0544f0218cc5ce40073d"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "485d12c345a0297aa21ff1a8e96f06e4fc711bbdd10e7b45a266c5409d349633",
+   "reproduced_output_file_sha256": "c5b4604f4f019e9b75695472908c4621fffcdd8862582e97579c7562a108840e",
+   "reproduced_predictions_sha256": "f686a9b2b1e1b4a5e7dd00efa4d2a37606d00b16c88f88802d65be470b2d6fc0",
+   "original_predictions_sha256": "f686a9b2b1e1b4a5e7dd00efa4d2a37606d00b16c88f88802d65be470b2d6fc0",
+   "original_predictions_file_sha256": "c5b4604f4f019e9b75695472908c4621fffcdd8862582e97579c7562a108840e",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V0_level_residual",
+   "view": "V0",
+   "representation": "level_residual",
+   "inputs_sha256": {
+    "data_level_residual.npz": "5acb0269bf2edd795871ae4b82f2329ff90fec30bc29db8823830c6d621b2131",
+    "input.json": "ffc18f9ab05f96abbc0f356f9e24098aad2f92c6310123a5b1fd2ae77a9fbffc"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "cb2f9d71f2628360a5c6ea928d2de06a80072222426b9b36f8903aa464d24c5c",
+   "reproduced_output_file_sha256": "a7b2c65df6a4d15860332b72d2e4d25921c9c954b7e25cbab61295df0e2fcae9",
+   "reproduced_predictions_sha256": "c2085798daf049f5d775b1c3b2e5e1faadd5a121b961f8518533013c3e474792",
+   "original_predictions_sha256": "c2085798daf049f5d775b1c3b2e5e1faadd5a121b961f8518533013c3e474792",
+   "original_predictions_file_sha256": "a7b2c65df6a4d15860332b72d2e4d25921c9c954b7e25cbab61295df0e2fcae9",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V0_affine_level",
+   "view": "V0",
+   "representation": "affine_level",
+   "inputs_sha256": {
+    "data_affine_level.npz": "94f1dc7bd91c89f69457061133e50f3f88a37633b94a27fd9f0148edc5bc205a",
+    "input.json": "b76f295838ec508b4478d0caf10ee2c00ad6baf992690767b402d79e198e8958"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "8b0e06716ec317610c7960d5d29eec1d731ad5da8d3f2f2faf40a398c8cb4d2a",
+   "reproduced_output_file_sha256": "7b4dc0ee04ed93b9c60e42258da98da22c7eb225e7370747dba965d0c6f507c6",
+   "reproduced_predictions_sha256": "b26d972de5f4ad7d4ca59fa7199c7eaecc573c0dad26a9f170d6da99af18f5f9",
+   "original_predictions_sha256": "b26d972de5f4ad7d4ca59fa7199c7eaecc573c0dad26a9f170d6da99af18f5f9",
+   "original_predictions_file_sha256": "7b4dc0ee04ed93b9c60e42258da98da22c7eb225e7370747dba965d0c6f507c6",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V0_volatility_time",
+   "view": "V0",
+   "representation": "volatility_time",
+   "inputs_sha256": {
+    "data_volatility_time.npz": "3a1719063ce90bfa7c98523cb0e80dd4c20dcedd58b98cd0207a5de34ebc0f63",
+    "input.json": "567de94d0255bc29e02114b2e22ee9cc431923c806d058b20a93f480797ad3f9"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "e257e4d9ffafd17ece663227f765c074f1845d6c323ec71f4fd6b03410c290cc",
+   "reproduced_output_file_sha256": "4117bb1e5ac90b8dce868ece2651d05a2016747933c724b75aff3e2a93a43e6e",
+   "reproduced_predictions_sha256": "0923653193cbf7f6510e8c27f54e9684496518f96c4e478d76da746223922b3a",
+   "original_predictions_sha256": "0923653193cbf7f6510e8c27f54e9684496518f96c4e478d76da746223922b3a",
+   "original_predictions_file_sha256": "4117bb1e5ac90b8dce868ece2651d05a2016747933c724b75aff3e2a93a43e6e",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V1_log_returns",
+   "view": "V1",
+   "representation": "log_returns",
+   "inputs_sha256": {
+    "data_log_returns.npz": "7ad29bed74b9f36a19db88d82fd8f58526ffba5a2787aba6e404d9d0144e139b",
+    "input.json": "6b82abec12357a9d320dfc97298956739167df61c24c7c53533cba8b385c2517",
+    "ledger.jsonl": "54f23f10732c2fda4cbc152b6919da8366d120101a8710469562a8aa7b8a7cf2"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "ec23a4706979555dc64d5f990957fa4511cd6c01b18c6043919d95d4d8bb4f94",
+   "reproduced_output_file_sha256": "e3906b6110605795668f1be51b296fe93adae0933adac4c15877483463cdea25",
+   "reproduced_predictions_sha256": "1fcee14258972cf75fdf213f7a744d585bc223fa0efd30bb96a6d2865f8e4679",
+   "original_predictions_sha256": "1fcee14258972cf75fdf213f7a744d585bc223fa0efd30bb96a6d2865f8e4679",
+   "original_predictions_file_sha256": "e3906b6110605795668f1be51b296fe93adae0933adac4c15877483463cdea25",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V1_tick_grid",
+   "view": "V1",
+   "representation": "tick_grid",
+   "inputs_sha256": {
+    "data_tick_grid.npz": "59d59937d6a797c5db54f8e05e89ede844c29b437b9846ddbc0878f14e2d4c44",
+    "input.json": "5d912e40fa44ed1b7a7ac57ff43607b0251d2d46b275dbfa9f3f7c55dec9e860",
+    "ledger.jsonl": "54f23f10732c2fda4cbc152b6919da8366d120101a8710469562a8aa7b8a7cf2"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "53b44b9664effd19f70d1f8874dc4f9b6c1f1f4cc7b975f3b64e76dbe020426f",
+   "reproduced_output_file_sha256": "806a3ee3b4aa0aa013aba3b90605a10c85a6d521752aaec6c9f9091fdc0eff6f",
+   "reproduced_predictions_sha256": "b165fa9532eaef0485f0b7c3afb513bc0f7a919be32ce076e8c1c03d3988ee15",
+   "original_predictions_sha256": "b165fa9532eaef0485f0b7c3afb513bc0f7a919be32ce076e8c1c03d3988ee15",
+   "original_predictions_file_sha256": "806a3ee3b4aa0aa013aba3b90605a10c85a6d521752aaec6c9f9091fdc0eff6f",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V1_level_residual",
+   "view": "V1",
+   "representation": "level_residual",
+   "inputs_sha256": {
+    "data_level_residual.npz": "5acb0269bf2edd795871ae4b82f2329ff90fec30bc29db8823830c6d621b2131",
+    "input.json": "dd93be9a2b808246aadffc5fbb86e2340986ae64849725a5ca9468459984b95a",
+    "ledger.jsonl": "54f23f10732c2fda4cbc152b6919da8366d120101a8710469562a8aa7b8a7cf2"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "5a2c9ad1d6c2b9cc46493079814047b5886d9733898b8889f0c0ce5c7ab61672",
+   "reproduced_output_file_sha256": "e5f540dcddf02ca01890750b8a5359326615e9bbc63737af32a182734d4733d2",
+   "reproduced_predictions_sha256": "0935a8d0c3d3916e51ddefb89f57c4e6a6ee793fe9d3145652ce287851b6fccb",
+   "original_predictions_sha256": "0935a8d0c3d3916e51ddefb89f57c4e6a6ee793fe9d3145652ce287851b6fccb",
+   "original_predictions_file_sha256": "e5f540dcddf02ca01890750b8a5359326615e9bbc63737af32a182734d4733d2",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V1_affine_level",
+   "view": "V1",
+   "representation": "affine_level",
+   "inputs_sha256": {
+    "data_affine_level.npz": "94f1dc7bd91c89f69457061133e50f3f88a37633b94a27fd9f0148edc5bc205a",
+    "input.json": "5b46d3612b02bf1401ec881553efe5630b7e9bd076bb929117579dc5f58d5a66",
+    "ledger.jsonl": "54f23f10732c2fda4cbc152b6919da8366d120101a8710469562a8aa7b8a7cf2"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "1c162f6e0af97d7e6ed020f480f7bd07e3fb6043bfebbeeafff67fb35911c1ce",
+   "reproduced_output_file_sha256": "ee934df310c3dedc18e5078e43b8bd439ce3e23e751ad9237e9951b55bff992a",
+   "reproduced_predictions_sha256": "adcd914ee81dc3dc30a8f022d8483b4da854a6c7943d7c290b2e14733837579e",
+   "original_predictions_sha256": "adcd914ee81dc3dc30a8f022d8483b4da854a6c7943d7c290b2e14733837579e",
+   "original_predictions_file_sha256": "ee934df310c3dedc18e5078e43b8bd439ce3e23e751ad9237e9951b55bff992a",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  },
+  {
+   "run": "V1_volatility_time",
+   "view": "V1",
+   "representation": "volatility_time",
+   "inputs_sha256": {
+    "data_volatility_time.npz": "3a1719063ce90bfa7c98523cb0e80dd4c20dcedd58b98cd0207a5de34ebc0f63",
+    "input.json": "cf9f753504780814c462519caba1ff121021b73ec774f6e27fb926dc647d9327",
+    "ledger.jsonl": "54f23f10732c2fda4cbc152b6919da8366d120101a8710469562a8aa7b8a7cf2"
+   },
+   "code_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "numeric.py": "03d8449e2ae1681a5795559a53551b3c248357ac40f25356094468b437daa631",
+    "reid.py": "4b553a3cba79f3b03a387110ede2ba02d0102c4c242df967a1ee3a7e189ca4fb",
+    "representations.py": "7ff8b95515401c2a74011cca9338ffb3cd67998ee91f9900aee494104c9dda4f",
+    "rip1_attack.py": "6d28758ed17ee2bc525251b280a24d2c8ea581d426d0c793d3638a0ca38d555e",
+    "rip1_attacker.py": "5ff355171a9a53682ebb3ed26df206548ddc3ef3218255bb4f3ae6987686ba69"
+   },
+   "probes_sha256": "9322b4134198c6bc32e6af019d9dda117994b85a0b6ae8d8c727e73a5f9289fc",
+   "reproduced_output_file_sha256": "a7966afd36955100bf32f76df8caab719aa3ad7cf3f3cea65906de45ef2c8ccd",
+   "reproduced_predictions_sha256": "977e997f33ad34b4abf191c7f2a18214693019fb7490c3af86a35029fd608e4e",
+   "original_predictions_sha256": "977e997f33ad34b4abf191c7f2a18214693019fb7490c3af86a35029fd608e4e",
+   "original_predictions_file_sha256": "a7966afd36955100bf32f76df8caab719aa3ad7cf3f3cea65906de45ef2c8ccd",
+   "checks": {
+    "returncode_0": true,
+    "no_leftover_process": true,
+    "inputs_unchanged_during_run": true,
+    "inputs_sha256_equal_original": true,
+    "code_sha256_equal_original": true,
+    "python_equal_original": true,
+    "numpy_equal_original": true,
+    "probes_all_pass": true,
+    "schema_valid_complete_attacker_set": true,
+    "predictions_identical_to_original": true
+   },
+   "schema": true,
+   "verdict": "identical"
+  }
+ ],
+ "all_identical": true,
+ "note": "criterion compares predictions and inputs exactly; whole-file equality is recorded per run (reproduced_output_file_sha256 vs original_predictions_file_sha256), not required."
+}
