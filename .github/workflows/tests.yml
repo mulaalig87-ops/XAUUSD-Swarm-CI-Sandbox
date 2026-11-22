@@ -1,0 +1,40 @@
+# XAUUSD Swarm build — automatic test run on every push and pull request.
+# Synthetic data only: the suite contains no gold data and needs none.
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: pytest (${{ matrix.os }}, Python 3.13)
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60     # RIP-1 heavy recomputation on the committed result (~10+ min on Ubuntu); FL-021
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]      # Windows = the founder's machine (OD-08)
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install the pinned test environment (env/test.lock.txt, OD-09)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --no-deps -r env/test.lock.txt
+
+      - name: Show versions
+        run: |
+          python --version
+          python -m pip freeze
+
+      - name: Run the full test suite
+        run: python -m pytest -q -p no:cacheprovider

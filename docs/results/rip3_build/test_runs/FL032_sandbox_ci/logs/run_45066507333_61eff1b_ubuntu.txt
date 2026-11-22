@@ -1,0 +1,236 @@
+﻿2026-11-22T20:27:16.0498799Z Current runner version: '2.338.2'
+2026-11-22T20:27:16.0526662Z ##[group]Runner Image Provisioner
+2026-11-22T20:27:16.0527563Z Hosted Compute Agent
+2026-11-22T20:27:16.0528377Z Version: 20261111.635
+2026-11-22T20:27:16.0529360Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-22T20:27:16.0530197Z Build Date: 2026-11-11T01:49:01Z
+2026-11-22T20:27:16.0531166Z Worker ID: {bd2c9ee7-7724-4cef-9c86-b8af9b5e6c3f}
+2026-11-22T20:27:16.0532028Z Region: eastus2
+2026-11-22T20:27:16.0532749Z Cloud: Azure
+2026-11-22T20:27:16.0533394Z ##[endgroup]
+2026-11-22T20:27:16.0535124Z ##[group]Operating System
+2026-11-22T20:27:16.0535994Z Ubuntu
+2026-11-22T20:27:16.0536613Z 26.04.1
+2026-11-22T20:27:16.0537315Z LTS
+2026-11-22T20:27:16.0537995Z ##[endgroup]
+2026-11-22T20:27:16.0538687Z ##[group]Runner Image
+2026-11-22T20:27:16.0539621Z Image: ubuntu-26.04
+2026-11-22T20:27:16.0540275Z Version: 20261116.202.1
+2026-11-22T20:27:16.0541958Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-22T20:27:16.0543968Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-22T20:27:16.0545357Z ##[endgroup]
+2026-11-22T20:27:16.0546794Z ##[group]GITHUB_TOKEN Permissions
+2026-11-22T20:27:16.0549990Z Contents: read
+2026-11-22T20:27:16.0550754Z Metadata: read
+2026-11-22T20:27:16.0551548Z ##[endgroup]
+2026-11-22T20:27:16.0553698Z Secret source: Actions
+2026-11-22T20:27:16.0554827Z Cache mode: write
+2026-11-22T20:27:16.0556091Z Prepare workflow directory
+2026-11-22T20:27:16.0925308Z Prepare all required actions
+2026-11-22T20:27:16.0980939Z Getting action download info
+2026-11-22T20:27:16.2614162Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-22T20:27:16.3417987Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-22T20:27:16.4978796Z Complete job name: pytest (ubuntu-latest, Python 3.13)
+2026-11-22T20:27:16.5741313Z ##[group]Run actions/checkout@v4
+2026-11-22T20:27:16.5742003Z with:
+2026-11-22T20:27:16.5742420Z   repository: mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:16.5745426Z   token: ***
+2026-11-22T20:27:16.5745780Z   ssh-strict: true
+2026-11-22T20:27:16.5746129Z   ssh-user: git
+2026-11-22T20:27:16.5746484Z   persist-credentials: true
+2026-11-22T20:27:16.5746864Z   clean: true
+2026-11-22T20:27:16.5747214Z   sparse-checkout-cone-mode: true
+2026-11-22T20:27:16.5747623Z   fetch-depth: 1
+2026-11-22T20:27:16.5747968Z   fetch-tags: false
+2026-11-22T20:27:16.5748324Z   show-progress: true
+2026-11-22T20:27:16.5748674Z   lfs: false
+2026-11-22T20:27:16.5749138Z   submodules: false
+2026-11-22T20:27:16.5749501Z   set-safe-directory: true
+2026-11-22T20:27:16.5749900Z   allow-unsafe-pr-checkout: false
+2026-11-22T20:27:16.5750451Z ##[endgroup]
+2026-11-22T20:27:16.8208148Z Syncing repository: mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:16.8211373Z ##[group]Getting Git version info
+2026-11-22T20:27:16.8212956Z Working directory is '/home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox'
+2026-11-22T20:27:16.8215188Z [command]/usr/bin/git version
+2026-11-22T20:27:16.8216303Z git version 2.56.1
+2026-11-22T20:27:16.8232557Z ##[endgroup]
+2026-11-22T20:27:16.8244492Z Temporarily overriding HOME='/home/runner/work/_temp/d69cee64-de34-4fc5-8c26-5bfbfb2d46fb' before making global git config changes
+2026-11-22T20:27:16.8247781Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-22T20:27:16.8250841Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:16.8308043Z Deleting the contents of '/home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox'
+2026-11-22T20:27:16.8311953Z ##[group]Initializing the repository
+2026-11-22T20:27:16.8316194Z [command]/usr/bin/git init /home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:16.8416394Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-22T20:27:16.8418691Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-22T20:27:16.8420823Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-22T20:27:16.8422421Z hint: call:
+2026-11-22T20:27:16.8423304Z hint:
+2026-11-22T20:27:16.8424432Z hint: 	git config --global init.defaultBranch <name>
+2026-11-22T20:27:16.8426232Z hint:
+2026-11-22T20:27:16.8427890Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-22T20:27:16.8430827Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-22T20:27:16.8432947Z hint:
+2026-11-22T20:27:16.8434111Z hint: 	git branch -m <name>
+2026-11-22T20:27:16.8435497Z hint:
+2026-11-22T20:27:16.8437330Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-22T20:27:16.8440849Z Initialized empty Git repository in /home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox/.git/
+2026-11-22T20:27:16.8445989Z [command]/usr/bin/git remote add origin https://github.com/mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:16.8488444Z ##[endgroup]
+2026-11-22T20:27:16.8491956Z ##[group]Disabling automatic garbage collection
+2026-11-22T20:27:16.8493317Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-22T20:27:16.8521422Z ##[endgroup]
+2026-11-22T20:27:16.8522617Z ##[group]Setting up auth
+2026-11-22T20:27:16.8527999Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-22T20:27:16.8557567Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-22T20:27:16.8960487Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-22T20:27:16.8992458Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-22T20:27:16.9225844Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-22T20:27:16.9256841Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-22T20:27:16.9485147Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-22T20:27:16.9519285Z ##[endgroup]
+2026-11-22T20:27:16.9520660Z ##[group]Fetching the repository
+2026-11-22T20:27:16.9527312Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf6b68202efd6e5c193fc29d02af4b3a6a2d60c8:refs/remotes/origin/snap/61eff1b
+2026-11-22T20:27:17.7626959Z From https://github.com/mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:17.7628497Z  * [new ref]         bf6b68202efd6e5c193fc29d02af4b3a6a2d60c8 -> origin/snap/61eff1b
+2026-11-22T20:27:17.7631080Z ##[endgroup]
+2026-11-22T20:27:17.7631803Z ##[group]Determining the checkout info
+2026-11-22T20:27:17.7633237Z ##[endgroup]
+2026-11-22T20:27:17.7638643Z [command]/usr/bin/git sparse-checkout disable
+2026-11-22T20:27:17.7683121Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-22T20:27:17.7708289Z ##[group]Checking out the ref
+2026-11-22T20:27:17.7711882Z [command]/usr/bin/git checkout --progress --force -B snap/61eff1b refs/remotes/origin/snap/61eff1b
+2026-11-22T20:27:17.8831631Z Switched to a new branch 'snap/61eff1b'
+2026-11-22T20:27:17.8834526Z branch 'snap/61eff1b' set up to track 'origin/snap/61eff1b'.
+2026-11-22T20:27:17.8849873Z ##[endgroup]
+2026-11-22T20:27:17.8893217Z [command]/usr/bin/git log -1 --format=%H
+2026-11-22T20:27:17.8914329Z bf6b68202efd6e5c193fc29d02af4b3a6a2d60c8
+2026-11-22T20:27:17.9159273Z ##[group]Run actions/setup-python@v5
+2026-11-22T20:27:17.9159687Z with:
+2026-11-22T20:27:17.9159997Z   python-version: 3.13
+2026-11-22T20:27:17.9160533Z   check-latest: false
+2026-11-22T20:27:17.9162498Z   token: ***
+2026-11-22T20:27:17.9162825Z   update-environment: true
+2026-11-22T20:27:17.9163166Z   allow-prereleases: false
+2026-11-22T20:27:17.9163491Z   freethreaded: false
+2026-11-22T20:27:17.9163791Z ##[endgroup]
+2026-11-22T20:27:18.0214858Z ##[group]Installed versions
+2026-11-22T20:27:18.1500765Z (node:2238) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T20:27:18.1501455Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-22T20:27:18.1501955Z Successfully set up CPython (3.13.18)
+2026-11-22T20:27:18.1502513Z ##[endgroup]
+2026-11-22T20:27:18.1749141Z ##[group]Run python -m pip install --upgrade pip
+2026-11-22T20:27:18.1749734Z [36;1mpython -m pip install --upgrade pip[0m
+2026-11-22T20:27:18.1750126Z [36;1mpython -m pip install --no-deps -r env/test.lock.txt[0m
+2026-11-22T20:27:18.2253322Z shell: /usr/bin/bash -e {0}
+2026-11-22T20:27:18.2253586Z env:
+2026-11-22T20:27:18.2253816Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:18.2254177Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-22T20:27:18.2254520Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:18.2254824Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:18.2255136Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:18.2255444Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-22T20:27:18.2255703Z ##[endgroup]
+2026-11-22T20:27:22.2502125Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.13.18/x64/lib/python3.13/site-packages (26.3)
+2026-11-22T20:27:23.6069784Z Collecting pytest==9.1.1 (from -r env/test.lock.txt (line 5))
+2026-11-22T20:27:23.6721832Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-11-22T20:27:23.7710886Z Collecting pluggy==1.6.0 (from -r env/test.lock.txt (line 6))
+2026-11-22T20:27:23.7886951Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-11-22T20:27:23.8187613Z Collecting iniconfig==2.3.0 (from -r env/test.lock.txt (line 7))
+2026-11-22T20:27:23.8374718Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-22T20:27:23.8710071Z Collecting packaging==26.3 (from -r env/test.lock.txt (line 8))
+2026-11-22T20:27:23.8884166Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-11-22T20:27:23.9611199Z Collecting pygments==2.21.0 (from -r env/test.lock.txt (line 9))
+2026-11-22T20:27:23.9784830Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-22T20:27:24.0213388Z Collecting colorama==0.4.6 (from -r env/test.lock.txt (line 10))
+2026-11-22T20:27:24.0388859Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2026-11-22T20:27:24.3119493Z Collecting cryptography==50.0.1 (from -r env/test.lock.txt (line 11))
+2026-11-22T20:27:24.3300826Z   Downloading cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+2026-11-22T20:27:24.5372052Z Collecting cffi==2.1.1 (from -r env/test.lock.txt (line 12))
+2026-11-22T20:27:24.5552221Z   Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+2026-11-22T20:27:24.6031512Z Collecting pycparser==3.0 (from -r env/test.lock.txt (line 13))
+2026-11-22T20:27:24.6207392Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-11-22T20:27:24.8337105Z Collecting numpy==2.5.3 (from -r env/test.lock.txt (line 14))
+2026-11-22T20:27:24.8551943Z   Downloading numpy-2.5.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-11-22T20:27:24.8775059Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-11-22T20:27:24.9604841Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-11-22T20:27:24.9794124Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-11-22T20:27:24.9984363Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-11-22T20:27:25.1006400Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-22T20:27:25.1302207Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 41.0 MB/s  0:00:00
+2026-11-22T20:27:25.1476579Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2026-11-22T20:27:25.1682229Z Downloading cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+2026-11-22T20:27:25.2346527Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 70.0 MB/s  0:00:00
+2026-11-22T20:27:25.2527814Z Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+2026-11-22T20:27:25.2764846Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-11-22T20:27:25.2958096Z Downloading numpy-2.5.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+2026-11-22T20:27:25.4163693Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 139.3 MB/s  0:00:00
+2026-11-22T20:27:25.4661859Z Installing collected packages: pytest, pygments, pycparser, pluggy, packaging, numpy, iniconfig, cryptography, colorama, cffi
+2026-11-22T20:27:28.3550761Z 
+2026-11-22T20:27:28.3565992Z Successfully installed cffi-2.1.1 colorama-0.4.6 cryptography-50.0.1 iniconfig-2.3.0 numpy-2.5.3 packaging-26.3 pluggy-1.6.0 pycparser-3.0 pygments-2.21.0 pytest-9.1.1
+2026-11-22T20:27:28.4262403Z ##[group]Run python --version
+2026-11-22T20:27:28.4262668Z [36;1mpython --version[0m
+2026-11-22T20:27:28.4262857Z [36;1mpython -m pip freeze[0m
+2026-11-22T20:27:28.4294084Z shell: /usr/bin/bash -e {0}
+2026-11-22T20:27:28.4294290Z env:
+2026-11-22T20:27:28.4294515Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.4294867Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-22T20:27:28.4295196Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.4295487Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.4295776Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.4296066Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-22T20:27:28.4296346Z ##[endgroup]
+2026-11-22T20:27:28.4357270Z Python 3.13.18
+2026-11-22T20:27:28.6312093Z cffi==2.1.1
+2026-11-22T20:27:28.6312417Z colorama==0.4.6
+2026-11-22T20:27:28.6312821Z cryptography==50.0.1
+2026-11-22T20:27:28.6313122Z iniconfig==2.3.0
+2026-11-22T20:27:28.6313372Z numpy==2.5.3
+2026-11-22T20:27:28.6313622Z packaging==26.3
+2026-11-22T20:27:28.6313912Z pluggy==1.6.0
+2026-11-22T20:27:28.6314162Z pycparser==3.0
+2026-11-22T20:27:28.6314416Z Pygments==2.21.0
+2026-11-22T20:27:28.6314680Z pytest==9.1.1
+2026-11-22T20:27:28.6583066Z ##[group]Run python -m pytest -q -p no:cacheprovider
+2026-11-22T20:27:28.6583402Z [36;1mpython -m pytest -q -p no:cacheprovider[0m
+2026-11-22T20:27:28.6612688Z shell: /usr/bin/bash -e {0}
+2026-11-22T20:27:28.6612892Z env:
+2026-11-22T20:27:28.6613104Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.6613451Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib/pkgconfig
+2026-11-22T20:27:28.6613796Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.6614098Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.6614388Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.18/x64
+2026-11-22T20:27:28.6614678Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.18/x64/lib
+2026-11-22T20:27:28.6614932Z ##[endgroup]
+2026-11-22T20:27:33.4618816Z ........................................................................ [  8%]
+2026-11-22T20:27:34.2406443Z ........................................................................ [ 16%]
+2026-11-22T20:27:35.1825185Z ........................................................................ [ 24%]
+2026-11-22T20:27:36.1390565Z ........................................................................ [ 32%]
+2026-11-22T20:27:40.6171116Z ........................................................................ [ 40%]
+2026-11-22T20:27:42.2611544Z ........................................................................ [ 48%]
+2026-11-22T20:28:58.9412158Z ........................................................................ [ 57%]
+2026-11-22T20:28:58.9880732Z ........................................................................ [ 65%]
+2026-11-22T20:28:59.1258817Z ........................................................................ [ 73%]
+2026-11-22T20:38:47.3329966Z ...................s.................sss................................ [ 81%]
+2026-11-22T20:42:55.6584648Z ....................................s......s.s.......................... [ 89%]
+2026-11-22T20:46:33.8722102Z ........................................................................ [ 97%]
+2026-11-22T20:53:03.9116689Z ....................                                                     [100%]
+2026-11-22T20:53:03.9118426Z 877 passed, 7 skipped in 1534.42s (0:25:34)
+2026-11-22T20:53:03.9857297Z Post job cleanup.
+2026-11-22T20:53:04.0868145Z (node:3104) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T20:53:04.0869188Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-22T20:53:04.0995164Z Post job cleanup.
+2026-11-22T20:53:04.1725383Z [command]/usr/bin/git version
+2026-11-22T20:53:04.1793738Z git version 2.56.1
+2026-11-22T20:53:04.1823327Z Temporarily overriding HOME='/home/runner/work/_temp/7095706c-289e-4589-92ec-23c4050fe33b' before making global git config changes
+2026-11-22T20:53:04.1824299Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-22T20:53:04.1827199Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:53:04.1861355Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-22T20:53:04.1892794Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-22T20:53:04.2154554Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-22T20:53:04.2183143Z http.https://github.com/.extraheader
+2026-11-22T20:53:04.2197436Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-22T20:53:04.2234038Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-22T20:53:04.2496281Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-22T20:53:04.2526764Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-22T20:53:04.2910165Z Cleaning up orphan processes
+2026-11-22T20:53:04.3291536Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

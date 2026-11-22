@@ -1,0 +1,229 @@
+{
+ "component": "WP9-03 — graded planted-leak test TP-50 and TP-50.0",
+ "design_decision": "FD-01-D38",
+ "module_sha256": {
+  "leakcheck.py": "a4e5ddde4ae9caf5cb7eac498d37078b0b5b60332f1096ee384b015d5b922dad"
+ },
+ "results": [
+  {
+   "control_id": "TP50-graded-positive",
+   "expected": {
+    "metric": "report_complete",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "e0c65b70ac0e664e46891276bc05a392b451ef5758a362eefbadc3bca72bd5f7",
+   "observed": {
+    "report": {
+     "experiment": "TP-50 (ت1–ت9) + TP-50.0",
+     "known_blind_spots": [
+      "t8",
+      "t9"
+     ],
+     "report_complete": true,
+     "rows": [
+      {
+       "frac": null,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": false,
+       "stat_rejection_rate": 0.03,
+       "states": [
+        "TP-50.0: false-alarm measurement"
+       ],
+       "type": "t0"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-target": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t1"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-window": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t2"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-norm": 100
+       },
+       "stat_inflated": false,
+       "stat_rejection_rate": 0.06,
+       "states": [
+        "كُشف بفحص النسب"
+       ],
+       "type": "t3"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-version": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t4"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-estimate": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 0.99,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t5"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-time": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t6"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 1.0,
+       "reps": 100,
+       "rules": {
+        "R-provenance": 100
+       },
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف بفحص النسب",
+        "كُشف إحصائيًا"
+       ],
+       "type": "t7"
+      },
+      {
+       "frac": 0.01,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": false,
+       "stat_rejection_rate": 0.04,
+       "states": [
+        "لم يُكشف بأي منهما: نقطة عمى معروفة"
+       ],
+       "type": "t8"
+      },
+      {
+       "frac": 0.03,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": false,
+       "stat_rejection_rate": 0.05,
+       "states": [
+        "لم يُكشف بأي منهما: نقطة عمى معروفة"
+       ],
+       "type": "t8"
+      },
+      {
+       "frac": 0.1,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": true,
+       "stat_rejection_rate": 0.38,
+       "states": [
+        "كُشف إحصائيًا"
+       ],
+       "type": "t8"
+      },
+      {
+       "frac": 0.3,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": true,
+       "stat_rejection_rate": 1.0,
+       "states": [
+        "كُشف إحصائيًا"
+       ],
+       "type": "t8"
+      },
+      {
+       "frac": null,
+       "lineage_rate": 0.0,
+       "reps": 100,
+       "rules": {},
+       "stat_inflated": false,
+       "stat_rejection_rate": 0.04,
+       "states": [
+        "لم يُكشف بأي منهما: نقطة عمى معروفة"
+       ],
+       "type": "t9"
+      }
+     ],
+     "t8_smallest_tested_fraction_with_inflation": 0.1
+    },
+    "report_complete": 1
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "world_sha256": "8898690f8a09b729613fa1f2a4ebefb81cac1633558b2acba09c6c6afccf78e3"
+  },
+  {
+   "control_id": "TP50.0-clean-negative",
+   "expected": {
+    "metric": "measured",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "a3ed9444e504664fb2b5308a0fbecaa18d6a97ff7a92a7c6ef0feed16d02d879",
+   "observed": {
+    "lineage_false_alarm_rate": 0.0,
+    "measured": 1,
+    "stat_false_alarm_rate": 0.03
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "world_sha256": "faab76238f94be7b9ec93d6020ced87cb7f1bb3f75f5f077d930cd34e618c833"
+  }
+ ],
+ "synthetic_only": true
+}
