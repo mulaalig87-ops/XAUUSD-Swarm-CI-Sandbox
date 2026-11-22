@@ -1,0 +1,249 @@
+{
+ "component": "WP9-02 part 1 — TP-21/tool, §11.2 null cards",
+ "criteria_decision": "FD-01-D30, FD-01-D31",
+ "module_sha256": {
+  "control_runs.py": "5f0ddbafdf94a747edb7a00ca8ba7d074e8a302d5fca4afb5c45d45abcf531dc",
+  "nulls.py": "3c73f39aa69d3e5d569341d666994cc663efda2e1af42fc6bdd9ecca8cc221fe"
+ },
+ "not_run": {
+  "block_bootstrap": "not a null; control is TP-81 (separate)",
+  "iaaft_TP-82_arm_b": "separate experiment",
+  "time_reversal": "test procedure «غير معرّف في المعمارية»",
+  "zero_cond_mean": "model family «غير معرّف في المعمارية»"
+ },
+ "results": [
+  {
+   "card": "full_shuffle",
+   "control_id": "TP21-full_shuffle-positive",
+   "evidence_sha256": "dc52647243c5e705e30f04fc253c3e8e4a12d64074a23f153708104370aa5d04",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.85,
+    "rejections": 51,
+    "reps": 60
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "version": "full_shuffle",
+   "world": {
+    "alpha": 0.05,
+    "card": "full_shuffle",
+    "kind": "real",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261117,
+    "surrogates": 19
+   },
+   "world_sha256": "3ae843c0ce18b4d0ac2e05e37444ed6f783ded539d0dd71a00dc146bf4932749"
+  },
+  {
+   "card": "full_shuffle",
+   "control_id": "TP21-full_shuffle-negative",
+   "evidence_sha256": "102bbb5a189699efdb230f345e43f7e56e9ea627213b21b667958da2027a1674",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.066666667,
+    "rejections": 4,
+    "reps": 60
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "full_shuffle",
+   "world": {
+    "alpha": 0.05,
+    "card": "full_shuffle",
+    "kind": "null",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261118,
+    "surrogates": 19
+   },
+   "world_sha256": "cfac72f71ab57f18acef3d4b44dd0d2c74f9cfe88f23dfaf1543ff0c0014feaa"
+  },
+  {
+   "card": "iaaft",
+   "control_id": "TP21-iaaft-positive",
+   "evidence_sha256": "55b63259401dc7a7f911c29070950e9d97af02492c346170cc4ac46d7e959288",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.925,
+    "rejections": 37,
+    "reps": 40
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "version": "iaaft",
+   "world": {
+    "alpha": 0.05,
+    "card": "iaaft",
+    "kind": "real",
+    "n": 128,
+    "reps": 40,
+    "seed": 20261117,
+    "surrogates": 19
+   },
+   "world_sha256": "ca169c49a6a906d90afa371e9e64fd175ab14d1d05c36cc92e042e7d152b56bf"
+  },
+  {
+   "card": "iaaft",
+   "control_id": "TP21-iaaft-negative",
+   "evidence_sha256": "eba2f3c9619271c6d9c6e4856f28bbbdaf1a102e45877cd1853c82874c9e017e",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.075,
+    "rejections": 3,
+    "reps": 40
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "iaaft",
+   "world": {
+    "alpha": 0.05,
+    "card": "iaaft",
+    "kind": "null",
+    "n": 128,
+    "reps": 40,
+    "seed": 20261118,
+    "surrogates": 19
+   },
+   "world_sha256": "a232a3f21d2fd8ff9db289b6eb20e6202f0bbb6ff2a2ade61901e9fd9621e1e4"
+  },
+  {
+   "card": "pair_shuffle_vol_blocks",
+   "control_id": "TP21-pair_shuffle_vol_blocks-positive",
+   "evidence_sha256": "f52c43de16ad18f5799d23af2640fc2aab85391e93d9738b8af2da71da955150",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.683333333,
+    "rejections": 41,
+    "reps": 60
+   },
+   "outcome": "fail",
+   "polarity": "positive",
+   "version": "pair_shuffle_vol_blocks",
+   "world": {
+    "alpha": 0.05,
+    "card": "pair_shuffle_vol_blocks",
+    "kind": "real",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261117,
+    "surrogates": 19
+   },
+   "world_sha256": "2f70521c217e04255b9f5eb6d0188883f711c0ddea5b6aadd84314b837ece002"
+  },
+  {
+   "card": "pair_shuffle_vol_blocks",
+   "control_id": "TP21-pair_shuffle_vol_blocks-negative",
+   "evidence_sha256": "e9ed31e9f6a7d00124a199dbd1d285994f96d55172e431ca325e264c71a50751",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.016666667,
+    "rejections": 1,
+    "reps": 60
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "pair_shuffle_vol_blocks",
+   "world": {
+    "alpha": 0.05,
+    "card": "pair_shuffle_vol_blocks",
+    "kind": "null",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261118,
+    "surrogates": 19
+   },
+   "world_sha256": "036f112b0c940cca2c74f75bf0a7073ad42cb05a3fd0a0815fafde2e41842041"
+  },
+  {
+   "card": "pair_shuffle_vol_blocks",
+   "control_id": "TP21-pair_shuffle_vol_blocks-v2-positive",
+   "evidence_sha256": "c1028fbe8c6cae072015f904af504a6e04fa245486197d235602639c3b4fb7b6",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.816666667,
+    "rejections": 49,
+    "reps": 60
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "version": "pair_shuffle_vol_blocks/v2",
+   "world": {
+    "alpha": 0.05,
+    "card": "pair_shuffle_vol_blocks/v2",
+    "kind": "real",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261117,
+    "surrogates": 19
+   },
+   "world_sha256": "892201d3846a6cc57df5577e41e573d5b231d118653e22bffc1f7da1ad2cf9ee"
+  },
+  {
+   "card": "pair_shuffle_vol_blocks",
+   "control_id": "TP21-pair_shuffle_vol_blocks-v2-negative",
+   "evidence_sha256": "e9ed31e9f6a7d00124a199dbd1d285994f96d55172e431ca325e264c71a50751",
+   "expected": {
+    "metric": "rejection_rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "7a8084f3302391a6a4d2a7f5624150759d28039198b6ac1aef02388248657dbd",
+   "observed": {
+    "rejection_rate": 0.016666667,
+    "rejections": 1,
+    "reps": 60
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "pair_shuffle_vol_blocks/v2",
+   "world": {
+    "alpha": 0.05,
+    "card": "pair_shuffle_vol_blocks/v2",
+    "kind": "null",
+    "n": 128,
+    "reps": 60,
+    "seed": 20261118,
+    "surrogates": 19
+   },
+   "world_sha256": "4e693f9d4cb3240f0f925eb7d4d2c3a761c7fe40969df587fc1c8c872ebb7fcc"
+  }
+ ],
+ "synthetic_only": true
+}
