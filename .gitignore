@@ -1,0 +1,14 @@
+_envs/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Gold data must never enter this repository (OD-10)
+*.csv
+*.parquet
+*.npz
+data/
+.wp801_state
+.wp801_tmp/
+
+# Exception: RIP-1 SYNTHETIC blinded data only (attacker-side, non-secret; needed for reproduction, FD-01-D45). Never gold.
+!docs/results/rip1/*.npz
