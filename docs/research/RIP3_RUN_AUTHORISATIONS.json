@@ -1,0 +1,13 @@
+{
+  "note": "Founder RUN authorisations for RIP-3 (OD-S9-17). A set that no entry covers is NOT authorised. An entry is added only by a recorded founder decision (a heading with the same id in docs/DECISIONS.md) and names the sets it covers and the approved commit and tree. scripts/rip3_run.py refuses the registered sets 6201 / 6301 without a matching entry.",
+  "authorisations": [
+    {
+      "id": "DEC-145",
+      "sets": [
+        "eval"
+      ],
+      "approved_commit": "44fde6a3f0ed8f05402410e859e9ebc302c277a0",
+      "approved_tree": "3452563a81512270a76b9e15339b2cc1547d664c"
+    }
+  ]
+}

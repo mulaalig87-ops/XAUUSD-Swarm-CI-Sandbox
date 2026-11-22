@@ -1,0 +1,14 @@
+#!/bin/sh
+# Local branch-policy barrier (Register §26 غ-11). LOCAL ONLY: it can be bypassed
+# (git commit --no-verify, deleting the hook). It is not remote branch protection.
+# Rule: no direct commits on main. Allowed on main: completing a merge (MERGE_HEAD present),
+# e.g. after resolving conflicts in "git merge --no-ff <branch>".
+# A clean "git merge --no-ff" does not run pre-commit at all (git runs pre-merge-commit instead).
+b=$(git symbolic-ref --short HEAD 2>/dev/null)
+if [ "$b" = "main" ]; then
+  gd=$(git rev-parse --git-dir)
+  if [ -f "$gd/MERGE_HEAD" ]; then exit 0; fi
+  echo "BLOCKED: direct commits to main are not allowed. Use a work branch and merge with --no-ff after review." >&2
+  exit 1
+fi
+exit 0
