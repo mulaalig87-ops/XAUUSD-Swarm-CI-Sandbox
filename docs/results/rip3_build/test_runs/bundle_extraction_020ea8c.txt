@@ -1,0 +1,6 @@
+RIP-3 bundle extraction test (2026-11-22)
+bundle: RIP3_build_020ea8c.zip built by scripts/rip3_bundle.py from commit 020ea8c (43 files; import closure 19 Python files incl. src/xauusd_swarm/numeric.py)
+extracted into an empty folder (/tmp/rbx); MANIFEST SHA-256 re-checked: 43 of 43 match
+command (in the extracted folder, PYTHONPATH unset, isolated mode): python3 -I -m pytest -p no:cacheprovider -q tests/test_rip3.py
+result: 51 passed in 179.10s (heavy smoke test included)
+also: python3 -I scripts/rip3_dcr01_study.py docs/results/rip3_build OUT -> identical to the committed DCR01_study_dev.json
