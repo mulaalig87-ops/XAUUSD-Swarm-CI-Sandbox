@@ -1,0 +1,215 @@
+{
+ "component": "WP9-02 part 2 — TP-47 (C0 gate), TP-46 (court)",
+ "criteria_decision": "FD-01-D32",
+ "module_sha256": {
+  "court.py": "041ab8dc652db4648a7c5739b8650f95b5a6ccba914e6680d101d35161e45117",
+  "court_service.py": "bb733c929ce052aaf4cb5d8464aa11b2adca455ffe897e16b83e6ebe41ac38ed",
+  "gate_court_controls.py": "356c6ab81e9b74f3440c76abe40582ed4f10969b5a353436ed4d91b7f3d77d31",
+  "inventory.py": "8e3a76e582ad5d83a7357fa032804009165d40fcfb4a565c3d6ada95f4dd7744"
+ },
+ "results": [
+  {
+   "control_id": "TP47-feed-positive",
+   "evidence_sha256": "9af44b90ba71a8f2fb7c4b4b88e98e7ca2c89674d45dbafdcfc92db58be04b3b",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "30c541d239fb0218d9617989d23b22ccb93b727207e9961f25ec285ddc7b1dda",
+   "observed": {
+    "match": 1,
+    "planted": 5,
+    "states": {
+     "1": 1,
+     "2": 4,
+     "3": 4
+    }
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "tool": "c0_gate:C0",
+   "world": {
+    "k": 5,
+    "n": 300,
+    "plant": 1,
+    "seed": 4702,
+    "tool": "C0"
+   },
+   "world_sha256": "d4a53dadd75b1eed923ebe19d8d6c1049952687d1071db07169827e64b978973"
+  },
+  {
+   "control_id": "TP47-processing-positive",
+   "evidence_sha256": "5b172425b87eb1d0192dde347600980e7362ce0e3cf62a701387a5e28f6ab7f5",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "30c541d239fb0218d9617989d23b22ccb93b727207e9961f25ec285ddc7b1dda",
+   "observed": {
+    "match": 1,
+    "planted": 5,
+    "states": {
+     "1": 4,
+     "2": 2,
+     "3": 4
+    }
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "tool": "c0_gate:C0",
+   "world": {
+    "k": 5,
+    "n": 300,
+    "plant": 2,
+    "seed": 4703,
+    "tool": "C0"
+   },
+   "world_sha256": "04613684421677a956dae240f80ea73b7a757944414fba154de987b556f825c8"
+  },
+  {
+   "control_id": "TP47-order-positive",
+   "evidence_sha256": "442c0c53170a825f3c009c12566f62607accb58d05128edea8726b699c4a93f5",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "30c541d239fb0218d9617989d23b22ccb93b727207e9961f25ec285ddc7b1dda",
+   "observed": {
+    "match": 1,
+    "planted": 5,
+    "states": {
+     "1": 4,
+     "2": 4,
+     "3": 3
+    }
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "tool": "c0_gate:C0",
+   "world": {
+    "k": 5,
+    "n": 300,
+    "plant": 3,
+    "seed": 4704,
+    "tool": "C0"
+   },
+   "world_sha256": "aec9a2721e1c91fed66ded880944a8efa6ceede8b21db36bea707d440212af78"
+  },
+  {
+   "control_id": "TP47-clean-negative",
+   "evidence_sha256": "54c7c584e83108b5a35980299f6ca4c27ddf0dbfe5caa1a9ed60e81b331068c4",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "30c541d239fb0218d9617989d23b22ccb93b727207e9961f25ec285ddc7b1dda",
+   "observed": {
+    "match": 1,
+    "planted": 0,
+    "states": {
+     "1": 4,
+     "2": 4,
+     "3": 4
+    }
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "tool": "c0_gate:C0",
+   "world": {
+    "k": 5,
+    "n": 300,
+    "plant": null,
+    "seed": 4701,
+    "tool": "C0"
+   },
+   "world_sha256": "5fa4562fa438b3c1852f23aeef35af5e749fac1ff080256b2ae28ef49a092f4d"
+  },
+  {
+   "control_id": "TP46-planted-positive",
+   "evidence_sha256": "522d46294184fb9229730128401afc291583f7e01a8c36d7edf79c6fa47b1164",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "7d7c513c574ecd1f5af70d9e58f665f6fa80cdd8453d13f74e225bd9a6846cfc",
+   "observed": {
+    "confirmed": [
+     "K1",
+     "K2"
+    ],
+    "match": 1,
+    "output_sha256": "a08f6195fc99ac695a470687ead527350bc115c70c07e0216527b93423f9f477",
+    "p_values": {
+     "T-K1": 0.001,
+     "T-K2": 0.001,
+     "T-K3": 0.365
+    }
+   },
+   "outcome": "pass",
+   "polarity": "positive",
+   "tool": "court:court",
+   "world": {
+    "b": 999,
+    "claims": [
+     "K1",
+     "K2",
+     "K3"
+    ],
+    "kind": "real",
+    "n": 200,
+    "planted": [
+     "K1",
+     "K2"
+    ],
+    "seed": 4601,
+    "shift": 0.4,
+    "tool": "court"
+   },
+   "world_sha256": "69a36b53fa518d7822e199ea366af7564c62a552d9de99c5c89626c101229538"
+  },
+  {
+   "control_id": "TP46-null-negative",
+   "evidence_sha256": "d6583a2a243aadc306718af08840d2b534c8738381d1913f718bf802191a2084",
+   "expected": {
+    "metric": "match",
+    "op": "==",
+    "value": 1
+   },
+   "impl_sha256": "7d7c513c574ecd1f5af70d9e58f665f6fa80cdd8453d13f74e225bd9a6846cfc",
+   "observed": {
+    "confirmed": [],
+    "match": 1,
+    "output_sha256": "49ed1798772f8cfb04d5434945d4b895227b2959ee4a531a913be85ca099591d",
+    "p_values": {
+     "T-K1": 0.241,
+     "T-K2": 0.084,
+     "T-K3": 0.495
+    }
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "tool": "court:court",
+   "world": {
+    "b": 999,
+    "claims": [
+     "K1",
+     "K2",
+     "K3"
+    ],
+    "kind": "null",
+    "n": 200,
+    "planted": [],
+    "seed": 4602,
+    "shift": 0.4,
+    "tool": "court"
+   },
+   "world_sha256": "5a322c93f243138f261f1b6a9c009b724c3efacc936bfaa8a68ac059cd949a14"
+  }
+ ],
+ "synthetic_only": true
+}

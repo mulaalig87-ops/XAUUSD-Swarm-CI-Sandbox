@@ -1,0 +1,802 @@
+{
+ "component": "WP9-02 part 3 — path 1 (P1-distributional): TP-21/tool and generalisation",
+ "criteria_decision": "FD-01-D35, FD-01-D36, FD-01-D37 (OD-S9-02)",
+ "generalisation_measure_and_declare": [
+  {
+   "observed": {
+    "hits": 33,
+    "rate": 0.66,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "real",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9201,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 4,
+    "rate": 0.08,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "spurious",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9202,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 5,
+    "rate": 0.1,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "null",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9203,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 30,
+    "rate": 0.6,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "real",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9301,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 7,
+    "rate": 0.14,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "spurious",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9302,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 3,
+    "rate": 0.06,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v1",
+   "world": {
+    "kind": "null",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9303,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 12,
+    "rate": 0.24,
+    "reps": 50,
+    "unscannable": 7
+   },
+   "version": "v1",
+   "world": {
+    "kind": "real",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9401,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 2,
+    "rate": 0.04,
+    "reps": 50,
+    "unscannable": 4
+   },
+   "version": "v1",
+   "world": {
+    "kind": "spurious",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9402,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 7,
+    "rate": 0.14,
+    "reps": 50,
+    "unscannable": 5
+   },
+   "version": "v1",
+   "world": {
+    "kind": "null",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9403,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 12,
+    "rate": 0.24,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "real",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9201,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 1,
+    "rate": 0.02,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "spurious",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9202,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 2,
+    "rate": 0.04,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "null",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800
+    },
+    "reps": 50,
+    "seed": 9203,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 11,
+    "rate": 0.22,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "real",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9301,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 1,
+    "rate": 0.02,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "spurious",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9302,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 2,
+    "rate": 0.04,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v2",
+   "world": {
+    "kind": "null",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9303,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 0,
+    "rate": 0.0,
+    "reps": 50,
+    "unscannable": 5
+   },
+   "version": "v2",
+   "world": {
+    "kind": "real",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9401,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 0,
+    "rate": 0.0,
+    "reps": 50,
+    "unscannable": 3
+   },
+   "version": "v2",
+   "world": {
+    "kind": "spurious",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9402,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 0,
+    "rate": 0.0,
+    "reps": 50,
+    "unscannable": 3
+   },
+   "version": "v2",
+   "world": {
+    "kind": "null",
+    "null": "run_permutation",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400
+    },
+    "reps": 50,
+    "seed": 9403,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 45,
+    "rate": 0.9,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "real",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9201,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 7,
+    "rate": 0.14,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "spurious",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9202,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 4,
+    "rate": 0.08,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "null",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 50,
+     "n": 800,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9203,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 29,
+    "rate": 0.58,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "real",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9301,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 4,
+    "rate": 0.08,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "spurious",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9302,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 2,
+    "rate": 0.04,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "version": "v3",
+   "world": {
+    "kind": "null",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 20,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9303,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 19,
+    "rate": 0.38,
+    "reps": 50,
+    "unscannable": 6
+   },
+   "version": "v3",
+   "world": {
+    "kind": "real",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9401,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 3,
+    "rate": 0.06,
+    "reps": 50,
+    "unscannable": 8
+   },
+   "version": "v3",
+   "world": {
+    "kind": "spurious",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9402,
+    "tool": "path:P1-distributional"
+   }
+  },
+  {
+   "observed": {
+    "hits": 6,
+    "rate": 0.12,
+    "reps": 50,
+    "unscannable": 3
+   },
+   "version": "v3",
+   "world": {
+    "kind": "null",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "mean_segment": 120,
+     "n": 400,
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9403,
+    "tool": "path:P1-distributional"
+   }
+  }
+ ],
+ "module_sha256": {
+  "PATH1_CARD_runs_v1-v3.md": "811377327cb374d027ca686676d63bb8bb6a10e19a6e18a60310ce011eced4cd",
+  "path1.py": "7ec348a213553b033fc54feb610e57cc2e23e8ceeab73c5f84d2949f830752ab"
+ },
+ "results": [
+  {
+   "control_id": "TP21-P1-v1-real-positive",
+   "evidence_sha256": "a64d3adfcc45b2e541a68e69a8c2755f1f3d539ccde90ebab9e01d18ee5136ff",
+   "expected": {
+    "metric": "rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 14,
+    "rate": 0.28,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "fail",
+   "polarity": "positive",
+   "version": "v1",
+   "world": {
+    "kind": "real",
+    "reps": 50,
+    "seed": 9101,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "8aea85d7e2856d851b01627b689700ccbe242885be34efe6bc7ad820c6cc1ed6"
+  },
+  {
+   "control_id": "TP21-P1-v1-spurious-negative",
+   "evidence_sha256": "651cb6e559f7ddb325af10fe43a7ae5d4b2f28691b11b20d1208633c313577e1",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 3,
+    "rate": 0.06,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v1",
+   "world": {
+    "kind": "spurious",
+    "reps": 50,
+    "seed": 9102,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "39e0d9bf061fa1431f769d098575619d0fd3cfdabc14f20d5a359a3842e040d9"
+  },
+  {
+   "control_id": "TP21-P1-v1-null-negative",
+   "evidence_sha256": "d09aa583fdfbeffa32bdbad9ec1de51aadaccd3909c369bf32a7241631dfcbb8",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 2,
+    "rate": 0.04,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v1",
+   "world": {
+    "kind": "null",
+    "reps": 50,
+    "seed": 9103,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "a432ddd8cdc79b05b0b37d850aef0acd0f532e66346c55a63fcbe0eeb32f204c"
+  },
+  {
+   "control_id": "TP21-P1-v2-real-positive",
+   "evidence_sha256": "7e7b9613ca41a25521e86f0dc50d2f99039d88e78f783484c4ea79a1f5262219",
+   "expected": {
+    "metric": "rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 0,
+    "rate": 0.0,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "fail",
+   "polarity": "positive",
+   "version": "v2",
+   "world": {
+    "kind": "real",
+    "null": "run_permutation",
+    "reps": 50,
+    "seed": 9101,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "54b012438aec6dcf87e4fe2de51386fe21297d17d6e1f9c357305e749ea5d734"
+  },
+  {
+   "control_id": "TP21-P1-v2-spurious-negative",
+   "evidence_sha256": "7e7b9613ca41a25521e86f0dc50d2f99039d88e78f783484c4ea79a1f5262219",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 0,
+    "rate": 0.0,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v2",
+   "world": {
+    "kind": "spurious",
+    "null": "run_permutation",
+    "reps": 50,
+    "seed": 9102,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "a6ca5745970104e37a6c97248df6091fe6b9a59160bff3e34e5cc7a14184f638"
+  },
+  {
+   "control_id": "TP21-P1-v2-null-negative",
+   "evidence_sha256": "1aa9b4d7800f01d9dce6970f9fa2c2ea679d2bb36d1ee57f40d06d7a99c996af",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 1,
+    "rate": 0.02,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v2",
+   "world": {
+    "kind": "null",
+    "null": "run_permutation",
+    "reps": 50,
+    "seed": 9103,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "f470902586796e3b0221d66c9d2dbb0cda8af05a4513d61149845ca7c9fc4216"
+  },
+  {
+   "control_id": "TP21-P1-v3-real-positive",
+   "evidence_sha256": "75aac9a2ad5983a96a10676c82e9b8fcfd87077fa7f026995b55229afa0fb5ee",
+   "expected": {
+    "metric": "rate",
+    "op": ">=",
+    "value": 0.8
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 33,
+    "rate": 0.66,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "fail",
+   "polarity": "positive",
+   "version": "v3",
+   "world": {
+    "kind": "real",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9101,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "001de3bc2195e582716ccf79c77f934303a5306bef62cd498839f7e957c593e8"
+  },
+  {
+   "control_id": "TP21-P1-v3-spurious-negative",
+   "evidence_sha256": "832296e58a55d9042ac20c572b86bf69ef8014e65c4a726218b5fb469cfb2a36",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 5,
+    "rate": 0.1,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v3",
+   "world": {
+    "kind": "spurious",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9102,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "965d49fd5b8c5ed80a86dde38792573511681fdee1382c6a3124343df3443c92"
+  },
+  {
+   "control_id": "TP21-P1-v3-null-negative",
+   "evidence_sha256": "066507734df0a15e7c7fa735f491068beb09fe42d0f9c8ba0869cbe898c55108",
+   "expected": {
+    "metric": "rate",
+    "op": "<=",
+    "value": 0.15
+   },
+   "impl_sha256": "8d10d17f296244f1a6832afd3d053df10d78ca06574a637da0626543f35fdc1d",
+   "observed": {
+    "hits": 4,
+    "rate": 0.08,
+    "reps": 50,
+    "unscannable": 0
+   },
+   "outcome": "pass",
+   "polarity": "negative",
+   "version": "v3",
+   "world": {
+    "kind": "null",
+    "null": "rotation_per_cell",
+    "overrides": {
+     "rotations": 199
+    },
+    "reps": 50,
+    "seed": 9103,
+    "tool": "path:P1-distributional"
+   },
+   "world_sha256": "599a9fae053862e2f9bd434a1f492cebbc334d8adc54d933632dc6aff2a1fc23"
+  }
+ ],
+ "synthetic_only": true
+}
