@@ -1,0 +1,247 @@
+{
+ "id": "RIP-2 partial reproduction",
+ "cells_checked": 12,
+ "all_identical": true,
+ "checks": [
+  {
+   "cell": [
+    "ind",
+    "C0(raw prices)",
+    "C0",
+    "hidden",
+    "A1"
+   ],
+   "reproduced": {
+    "asset": 0.8375,
+    "period": 0.4625,
+    "joint": 0.415
+   },
+   "original": {
+    "asset": 0.8375,
+    "period": 0.4625,
+    "joint": 0.415
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "C0(raw prices)",
+    "C0",
+    "hidden",
+    "A2"
+   ],
+   "reproduced": {
+    "asset": 0.9125,
+    "period": 0.535,
+    "joint": 0.52
+   },
+   "original": {
+    "asset": 0.9125,
+    "period": 0.535,
+    "joint": 0.52
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "C0(raw prices)",
+    "C0",
+    "hidden",
+    "A3"
+   ],
+   "reproduced": {
+    "asset": 0.2875,
+    "period": 0.245,
+    "joint": 0.065
+   },
+   "original": {
+    "asset": 0.2875,
+    "period": 0.245,
+    "joint": 0.065
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "C0(raw prices)",
+    "C0",
+    "hidden",
+    "A6"
+   ],
+   "reproduced": {
+    "asset": 1.0,
+    "period": 1.0,
+    "joint": 1.0
+   },
+   "original": {
+    "asset": 1.0,
+    "period": 1.0,
+    "joint": 1.0
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "affine_level",
+    "C2",
+    "hidden",
+    "A1"
+   ],
+   "reproduced": {
+    "asset": 0.775,
+    "period": 0.3,
+    "joint": 0.245
+   },
+   "original": {
+    "asset": 0.775,
+    "period": 0.3,
+    "joint": 0.245
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "affine_level",
+    "C2",
+    "hidden",
+    "A2"
+   ],
+   "reproduced": {
+    "asset": 0.79,
+    "period": 0.3325,
+    "joint": 0.2875
+   },
+   "original": {
+    "asset": 0.79,
+    "period": 0.3325,
+    "joint": 0.2875
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "affine_level",
+    "C2",
+    "hidden",
+    "A3"
+   ],
+   "reproduced": {
+    "asset": 0.2875,
+    "period": 0.245,
+    "joint": 0.065
+   },
+   "original": {
+    "asset": 0.2875,
+    "period": 0.245,
+    "joint": 0.065
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "affine_level",
+    "C2",
+    "hidden",
+    "A6"
+   ],
+   "reproduced": {
+    "asset": 0.9325,
+    "period": 0.375,
+    "joint": 0.3575
+   },
+   "original": {
+    "asset": 0.9325,
+    "period": 0.375,
+    "joint": 0.3575
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "level_residual",
+    "C2",
+    "shown",
+    "A1"
+   ],
+   "reproduced": {
+    "asset": 0.9175,
+    "period": 0.315,
+    "joint": 0.3025
+   },
+   "original": {
+    "asset": 0.9175,
+    "period": 0.315,
+    "joint": 0.3025
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "level_residual",
+    "C2",
+    "shown",
+    "A2"
+   ],
+   "reproduced": {
+    "asset": 0.9175,
+    "period": 0.275,
+    "joint": 0.2575
+   },
+   "original": {
+    "asset": 0.9175,
+    "period": 0.275,
+    "joint": 0.2575
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "level_residual",
+    "C2",
+    "shown",
+    "A3"
+   ],
+   "reproduced": {
+    "asset": 0.3325,
+    "period": 0.2675,
+    "joint": 0.09
+   },
+   "original": {
+    "asset": 0.3325,
+    "period": 0.2675,
+    "joint": 0.09
+   },
+   "identical": true
+  },
+  {
+   "cell": [
+    "ind",
+    "level_residual",
+    "C2",
+    "shown",
+    "A6"
+   ],
+   "reproduced": {
+    "asset": 0.9725,
+    "period": 0.7075,
+    "joint": 0.7025
+   },
+   "original": {
+    "asset": 0.9725,
+    "period": 0.7075,
+    "joint": 0.7025
+   },
+   "identical": true
+  }
+ ]
+}
