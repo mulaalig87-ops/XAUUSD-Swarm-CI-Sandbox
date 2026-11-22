@@ -1,0 +1,433 @@
+{
+ "spec": {
+  "B_primary": 100000,
+  "B_ladder": [
+   2000,
+   10000,
+   50000,
+   100000
+  ],
+  "seed": 6119,
+  "extra_seeds": [
+   6120,
+   6121
+  ],
+  "alpha": 0.05,
+  "cells_gating": 9,
+  "chunk": 5000,
+  "attackers": [
+   "A6",
+   "A7x4",
+   "A8x4"
+  ]
+ },
+ "upper_percentile": 99.44444444444444,
+ "data": "development only (B3: dev 6101, units 6102)",
+ "disclosure": "DCR-01 was proposed after seeing these development results; no evaluation (6201) or confirmatory (6301) data exist or were used.",
+ "cells": [
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "ind",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.030000000000000027,
+   "UB_by_B_seed6119": {
+    "2000": 0.030000000000000027,
+    "10000": 0.030000000000000027,
+    "50000": 0.030000000000000027,
+    "100000": 0.030000000000000027
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.030000000000000027,
+    "6120": 0.030000000000000027,
+    "6121": 0.030000000000000027
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.009895550000000008,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "ind",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.030000000000000027,
+   "UB_by_B_seed6119": {
+    "2000": 0.030000000000000027,
+    "10000": 0.030000000000000027,
+    "50000": 0.030000000000000027,
+    "100000": 0.030000000000000027
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.030000000000000027,
+    "6120": 0.030000000000000027,
+    "6121": 0.030000000000000027
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.009972100000000008,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "ind",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.03500000000000003,
+   "UB_by_B_seed6119": {
+    "2000": 0.03500000000000003,
+    "10000": 0.03500000000000003,
+    "50000": 0.03500000000000003,
+    "100000": 0.03500000000000003
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.03500000000000003,
+    "6120": 0.03500000000000003,
+    "6121": 0.03500000000000003
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.012472300000000009,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g4",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g4",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g4",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g16",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g16",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-LR",
+   "gating": true,
+   "scenario": "g16",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": 0.0,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "ind",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.0625,
+   "UB_by_B_seed6119": {
+    "2000": 0.057499999999999996,
+    "10000": 0.06000000000000005,
+    "50000": 0.0625,
+    "100000": 0.0625
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0625,
+    "6120": 0.06000000000000005,
+    "6121": 0.0625
+   },
+   "UB_seed_spread": 0.0024999999999999467,
+   "UB_mc_sd_across_seeds": 0.0014433756729740337,
+   "D_resampled_mean": 0.017536750000000007,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "ind",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.012500000000000011,
+   "UB_by_B_seed6119": {
+    "2000": 0.015000000000000013,
+    "10000": 0.012500000000000011,
+    "50000": 0.012500000000000011,
+    "100000": 0.012500000000000011
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.012500000000000011,
+    "6120": 0.012500000000000011,
+    "6121": 0.012500000000000011
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.053307875000000005,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "ind",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.030000000000000027,
+   "UB_by_B_seed6119": {
+    "2000": 0.025000000000000022,
+    "10000": 0.029999999999999995,
+    "50000": 0.030000000000000027,
+    "100000": 0.030000000000000027
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.030000000000000027,
+    "6120": 0.030000000000000027,
+    "6121": 0.030000000000000027
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.042597199999999995,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g4",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.05624999999999991,
+   "UB_by_B_seed6119": {
+    "2000": 0.050000000000000044,
+    "10000": 0.050000000000000044,
+    "50000": 0.050000000000000044,
+    "100000": 0.05624999999999991
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.05624999999999991,
+    "6120": 0.05624999999999991,
+    "6121": 0.050000000000000044
+   },
+   "UB_seed_spread": 0.006249999999999867,
+   "UB_mc_sd_across_seeds": 0.003608439182435084,
+   "D_resampled_mean": 0.006106999999999998,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g4",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.10000000000000003,
+   "UB_by_B_seed6119": {
+    "2000": 0.10000000000000003,
+    "10000": 0.10000000000000003,
+    "50000": 0.10000000000000003,
+    "100000": 0.10000000000000003
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.10000000000000003,
+    "6120": 0.10624999999999996,
+    "6121": 0.10624999999999996
+   },
+   "UB_seed_spread": 0.006249999999999922,
+   "UB_mc_sd_across_seeds": 0.0036084391824351162,
+   "D_resampled_mean": -0.020105437499999997,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g4",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.11249999999999999,
+   "UB_by_B_seed6119": {
+    "2000": 0.10625000000000001,
+    "10000": 0.10625000000000001,
+    "50000": 0.11249999999999999,
+    "100000": 0.11249999999999999
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.11249999999999999,
+    "6120": 0.11249999999999999,
+    "6121": 0.11249999999999999
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.01878425,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g16",
+   "target": "asset",
+   "UB_primary_B100000_seed6119": 0.0,
+   "UB_by_B_seed6119": {
+    "2000": 0.0,
+    "10000": 0.0,
+    "50000": 0.0,
+    "100000": 0.0
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.0,
+    "6120": 0.0,
+    "6121": 0.0
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.049877,
+   "R0_pass": true
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g16",
+   "target": "period",
+   "UB_primary_B100000_seed6119": 0.13749999999999996,
+   "UB_by_B_seed6119": {
+    "2000": 0.13618055555555483,
+    "10000": 0.1375,
+    "50000": 0.13749999999999996,
+    "100000": 0.13749999999999996
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.13749999999999996,
+    "6120": 0.13749999999999996,
+    "6121": 0.13749999999999996
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.0158205,
+   "R0_pass": false
+  },
+  {
+   "candidate": "B-AF",
+   "gating": false,
+   "scenario": "g16",
+   "target": "joint",
+   "UB_primary_B100000_seed6119": 0.1375,
+   "UB_by_B_seed6119": {
+    "2000": 0.1375,
+    "10000": 0.1375,
+    "50000": 0.1375,
+    "100000": 0.1375
+   },
+   "UB_B100000_by_seed": {
+    "6119": 0.1375,
+    "6120": 0.1375,
+    "6121": 0.1375
+   },
+   "UB_seed_spread": 0.0,
+   "UB_mc_sd_across_seeds": 0.0,
+   "D_resampled_mean": -0.024681124999999998,
+   "R0_pass": false
+  }
+ ],
+ "R0_pass_all_gating": false,
+ "R0_failing_gating_cells": [
+  "ind|asset",
+  "ind|period",
+  "ind|joint"
+ ],
+ "max_gating_UB_primary_INFORMATION_ONLY": 0.03500000000000003,
+ "R0_decision_same_for_all_B_and_seeds": true
+}
