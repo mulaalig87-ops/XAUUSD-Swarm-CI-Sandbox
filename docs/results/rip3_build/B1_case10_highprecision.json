@@ -1,0 +1,25 @@
+{
+ "case": {
+  "name": "stress_a0_extreme_s_0.05",
+  "asset": 0,
+  "P": 1800.0,
+  "s": 0.05,
+  "K": 400.0
+ },
+ "decimal_digits": 50,
+ "K": 400.0,
+ "exact_levels": 10002,
+ "blocks": 47152,
+ "q_float": 0.0025000001084207447,
+ "q_hp": 0.002500000108416711,
+ "abs_diff_float_vs_hp": 4.03372444401615e-15,
+ "rel_diff": 1.613489707634761e-12,
+ "E_float": 8.870496759132602e-10,
+ "E_hp": 8.870496759132608e-10,
+ "E_hp_over_q": 3.5481985497794363e-07,
+ "block_bound_hp": 9.614499083995859e-12,
+ "diff_share_of_remaining_budget": 2.500835960442648e-06,
+ "criterion": "|q_float \u2212 q_hp| + E_hp \u2264 1e-6\u00b7q_hp",
+ "pass": true,
+ "seconds": 36.7
+}

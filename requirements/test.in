@@ -1,0 +1,3 @@
+# Direct requirement, pinned (OD-09). Full pinned set: env/test.lock.txt
+pytest==9.1.1
+cryptography==50.0.1
