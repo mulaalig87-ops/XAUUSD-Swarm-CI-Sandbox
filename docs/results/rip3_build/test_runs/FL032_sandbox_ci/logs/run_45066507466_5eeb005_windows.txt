@@ -1,0 +1,220 @@
+﻿2026-11-22T20:27:19.1831506Z Current runner version: '2.338.2'
+2026-11-22T20:27:19.2099366Z ##[group]Runner Image Provisioner
+2026-11-22T20:27:19.2100103Z Hosted Compute Agent
+2026-11-22T20:27:19.2100455Z Version: 20261111.635
+2026-11-22T20:27:19.2100837Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-22T20:27:19.2101242Z Build Date: 2026-11-11T01:49:01Z
+2026-11-22T20:27:19.2101643Z Worker ID: {0db1997f-3915-4df9-998c-7e73c132acd9}
+2026-11-22T20:27:19.2102062Z Region: centralus
+2026-11-22T20:27:19.2102398Z Cloud: Azure
+2026-11-22T20:27:19.2102714Z ##[endgroup]
+2026-11-22T20:27:19.2103577Z ##[group]Operating System
+2026-11-22T20:27:19.2103920Z Microsoft Windows Server 2025
+2026-11-22T20:27:19.2104243Z 10.0.26100
+2026-11-22T20:27:19.2104544Z Datacenter
+2026-11-22T20:27:19.2104834Z ##[endgroup]
+2026-11-22T20:27:19.2105129Z ##[group]Runner Image
+2026-11-22T20:27:19.2105480Z Image: windows-2025-vs2026
+2026-11-22T20:27:19.2105821Z Version: 20261116.315.1
+2026-11-22T20:27:19.2106769Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20261116.315/images/windows/Windows2025-VS2026-Readme.md
+2026-11-22T20:27:19.2107841Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20261116.315
+2026-11-22T20:27:19.2108373Z ##[endgroup]
+2026-11-22T20:27:19.2109057Z ##[group]GITHUB_TOKEN Permissions
+2026-11-22T20:27:19.2110243Z Contents: read
+2026-11-22T20:27:19.2110583Z Metadata: read
+2026-11-22T20:27:19.2110951Z ##[endgroup]
+2026-11-22T20:27:19.2112390Z Secret source: Actions
+2026-11-22T20:27:19.2112862Z Cache mode: write
+2026-11-22T20:27:19.2113312Z Prepare workflow directory
+2026-11-22T20:27:19.3573214Z Prepare all required actions
+2026-11-22T20:27:19.3617559Z Getting action download info
+2026-11-22T20:27:19.5786327Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-22T20:27:19.7000781Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-22T20:27:20.1329837Z Complete job name: pytest (windows-latest, Python 3.13)
+2026-11-22T20:27:20.8333329Z ##[group]Run actions/checkout@v4
+2026-11-22T20:27:20.8334138Z with:
+2026-11-22T20:27:20.8334445Z   repository: mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:20.8337309Z   token: ***
+2026-11-22T20:27:20.8337570Z   ssh-strict: true
+2026-11-22T20:27:20.8337839Z   ssh-user: git
+2026-11-22T20:27:20.8338103Z   persist-credentials: true
+2026-11-22T20:27:20.8338398Z   clean: true
+2026-11-22T20:27:20.8338670Z   sparse-checkout-cone-mode: true
+2026-11-22T20:27:20.8338991Z   fetch-depth: 1
+2026-11-22T20:27:20.8339240Z   fetch-tags: false
+2026-11-22T20:27:20.8339516Z   show-progress: true
+2026-11-22T20:27:20.8339797Z   lfs: false
+2026-11-22T20:27:20.8340058Z   submodules: false
+2026-11-22T20:27:20.8340348Z   set-safe-directory: true
+2026-11-22T20:27:20.8340667Z   allow-unsafe-pr-checkout: false
+2026-11-22T20:27:20.8341136Z ##[endgroup]
+2026-11-22T20:27:20.9932572Z Syncing repository: mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:20.9934726Z ##[group]Getting Git version info
+2026-11-22T20:27:20.9935535Z Working directory is 'D:\a\XAUUSD-Swarm-CI-Sandbox\XAUUSD-Swarm-CI-Sandbox'
+2026-11-22T20:27:21.0372260Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-11-22T20:27:21.3369412Z git version 2.56.1.windows.1
+2026-11-22T20:27:21.3408452Z ##[endgroup]
+2026-11-22T20:27:21.3449877Z Temporarily overriding HOME='D:\a\_temp\979efe87-1f8f-4eed-a646-54e0817e79da' before making global git config changes
+2026-11-22T20:27:21.3450680Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-22T20:27:21.3451488Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\XAUUSD-Swarm-CI-Sandbox\XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:21.3970612Z Deleting the contents of 'D:\a\XAUUSD-Swarm-CI-Sandbox\XAUUSD-Swarm-CI-Sandbox'
+2026-11-22T20:27:21.3975745Z ##[group]Initializing the repository
+2026-11-22T20:27:21.3982545Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\XAUUSD-Swarm-CI-Sandbox\XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:21.4716414Z Initialized empty Git repository in D:/a/XAUUSD-Swarm-CI-Sandbox/XAUUSD-Swarm-CI-Sandbox/.git/
+2026-11-22T20:27:21.4760569Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:21.5299085Z ##[endgroup]
+2026-11-22T20:27:21.5299750Z ##[group]Disabling automatic garbage collection
+2026-11-22T20:27:21.5307752Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-11-22T20:27:21.5592323Z ##[endgroup]
+2026-11-22T20:27:21.5593033Z ##[group]Setting up auth
+2026-11-22T20:27:21.5602703Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-11-22T20:27:21.5883978Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-22T20:27:23.5605258Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-22T20:27:23.5886399Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-22T20:27:24.1056522Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-22T20:27:24.1361797Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-11-22T20:27:24.5599012Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-11-22T20:27:24.5902295Z ##[endgroup]
+2026-11-22T20:27:24.5902848Z ##[group]Fetching the repository
+2026-11-22T20:27:24.5914055Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +547e0eaf95b42f446477b56e3ad0d3915d239cf6:refs/remotes/origin/snap/5eeb005
+2026-11-22T20:27:26.1890177Z From https://github.com/mulaalig87-ops/XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:27:26.1891048Z  * [new ref]         547e0eaf95b42f446477b56e3ad0d3915d239cf6 -> origin/snap/5eeb005
+2026-11-22T20:27:26.1925290Z ##[endgroup]
+2026-11-22T20:27:26.1925527Z ##[group]Determining the checkout info
+2026-11-22T20:27:26.1927729Z ##[endgroup]
+2026-11-22T20:27:26.1937468Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-11-22T20:27:26.2329154Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-11-22T20:27:26.2621604Z ##[group]Checking out the ref
+2026-11-22T20:27:26.2629579Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B snap/5eeb005 refs/remotes/origin/snap/5eeb005
+2026-11-22T20:27:26.6302026Z Switched to a new branch 'snap/5eeb005'
+2026-11-22T20:27:26.6316647Z branch 'snap/5eeb005' set up to track 'origin/snap/5eeb005'.
+2026-11-22T20:27:26.6397872Z ##[endgroup]
+2026-11-22T20:27:26.6746018Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-11-22T20:27:26.6991975Z 547e0eaf95b42f446477b56e3ad0d3915d239cf6
+2026-11-22T20:27:26.7357411Z ##[group]Run actions/setup-python@v5
+2026-11-22T20:27:26.7357638Z with:
+2026-11-22T20:27:26.7357755Z   python-version: 3.13
+2026-11-22T20:27:26.7357895Z   check-latest: false
+2026-11-22T20:27:26.7359347Z   token: ***
+2026-11-22T20:27:26.7359463Z   update-environment: true
+2026-11-22T20:27:26.7359608Z   allow-prereleases: false
+2026-11-22T20:27:26.7359783Z   freethreaded: false
+2026-11-22T20:27:26.7359940Z ##[endgroup]
+2026-11-22T20:27:26.8469050Z ##[group]Installed versions
+2026-11-22T20:27:26.8610539Z (node:6176) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T20:27:26.8611860Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-22T20:27:26.8612422Z Successfully set up CPython (3.13.17)
+2026-11-22T20:27:26.8612880Z ##[endgroup]
+2026-11-22T20:27:26.8874981Z ##[group]Run python -m pip install --upgrade pip
+2026-11-22T20:27:26.8875334Z [36;1mpython -m pip install --upgrade pip[0m
+2026-11-22T20:27:26.8875551Z [36;1mpython -m pip install --no-deps -r env/test.lock.txt[0m
+2026-11-22T20:27:26.9528351Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-11-22T20:27:26.9528607Z env:
+2026-11-22T20:27:26.9528785Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:26.9529052Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.17\x64/lib/pkgconfig
+2026-11-22T20:27:26.9529297Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:26.9529511Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:26.9529746Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:26.9529916Z ##[endgroup]
+2026-11-22T20:27:30.7122707Z Requirement already satisfied: pip in C:\hostedtoolcache\windows\Python\3.13.17\x64\Lib\site-packages (26.3)
+2026-11-22T20:27:32.0505168Z Collecting pytest==9.1.1 (from -r env/test.lock.txt (line 5))
+2026-11-22T20:27:32.1146673Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-11-22T20:27:32.1660271Z Collecting pluggy==1.6.0 (from -r env/test.lock.txt (line 6))
+2026-11-22T20:27:32.1819505Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-11-22T20:27:32.2345667Z Collecting iniconfig==2.3.0 (from -r env/test.lock.txt (line 7))
+2026-11-22T20:27:32.2486116Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-22T20:27:32.3021768Z Collecting packaging==26.3 (from -r env/test.lock.txt (line 8))
+2026-11-22T20:27:32.3162717Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-11-22T20:27:32.3740320Z Collecting pygments==2.21.0 (from -r env/test.lock.txt (line 9))
+2026-11-22T20:27:32.3883170Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-22T20:27:32.4412319Z Collecting colorama==0.4.6 (from -r env/test.lock.txt (line 10))
+2026-11-22T20:27:32.4552579Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2026-11-22T20:27:32.6457642Z Collecting cryptography==50.0.1 (from -r env/test.lock.txt (line 11))
+2026-11-22T20:27:32.6628125Z   Downloading cryptography-50.0.1-cp311-abi3-win_amd64.whl.metadata (4.3 kB)
+2026-11-22T20:27:32.7663958Z Collecting cffi==2.1.1 (from -r env/test.lock.txt (line 12))
+2026-11-22T20:27:32.7809855Z   Downloading cffi-2.1.1-cp313-cp313-win_amd64.whl.metadata (2.6 kB)
+2026-11-22T20:27:32.8369476Z Collecting pycparser==3.0 (from -r env/test.lock.txt (line 13))
+2026-11-22T20:27:32.8514229Z   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-11-22T20:27:33.0150430Z Collecting numpy==2.5.3 (from -r env/test.lock.txt (line 14))
+2026-11-22T20:27:33.0361981Z   Downloading numpy-2.5.3-cp313-cp313-win_amd64.whl.metadata (6.6 kB)
+2026-11-22T20:27:33.0732559Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-11-22T20:27:33.1445572Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-11-22T20:27:33.1756762Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-11-22T20:27:33.2048511Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-11-22T20:27:33.2357972Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-22T20:27:33.2870702Z    ---------------------------------------- 1.3/1.3 MB 21.5 MB/s  0:00:00
+2026-11-22T20:27:33.3014136Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2026-11-22T20:27:33.3350765Z Downloading cryptography-50.0.1-cp311-abi3-win_amd64.whl (3.8 MB)
+2026-11-22T20:27:33.3978362Z    ---------------------------------------- 3.8/3.8 MB 59.6 MB/s  0:00:00
+2026-11-22T20:27:33.4119372Z Downloading cffi-2.1.1-cp313-cp313-win_amd64.whl (185 kB)
+2026-11-22T20:27:33.4456514Z Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-11-22T20:27:33.4776225Z Downloading numpy-2.5.3-cp313-cp313-win_amd64.whl (12.6 MB)
+2026-11-22T20:27:33.5948447Z    ---------------------------------------- 12.6/12.6 MB 107.4 MB/s  0:00:00
+2026-11-22T20:27:33.6700395Z Installing collected packages: pytest, pygments, pycparser, pluggy, packaging, numpy, iniconfig, cryptography, colorama, cffi
+2026-11-22T20:27:39.6045673Z 
+2026-11-22T20:27:39.6059669Z Successfully installed cffi-2.1.1 colorama-0.4.6 cryptography-50.0.1 iniconfig-2.3.0 numpy-2.5.3 packaging-26.3 pluggy-1.6.0 pycparser-3.0 pygments-2.21.0 pytest-9.1.1
+2026-11-22T20:27:39.7743806Z ##[group]Run python --version
+2026-11-22T20:27:39.7744041Z [36;1mpython --version[0m
+2026-11-22T20:27:39.7744175Z [36;1mpython -m pip freeze[0m
+2026-11-22T20:27:39.7794904Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-11-22T20:27:39.7795365Z env:
+2026-11-22T20:27:39.7795565Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:39.7795831Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.17\x64/lib/pkgconfig
+2026-11-22T20:27:39.7796195Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:39.7796798Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:39.7797170Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:39.7798082Z ##[endgroup]
+2026-11-22T20:27:40.0094496Z Python 3.13.17
+2026-11-22T20:27:40.2047101Z cffi==2.1.1
+2026-11-22T20:27:40.2047345Z colorama==0.4.6
+2026-11-22T20:27:40.2047678Z cryptography==50.0.1
+2026-11-22T20:27:40.2047873Z iniconfig==2.3.0
+2026-11-22T20:27:40.2048033Z numpy==2.5.3
+2026-11-22T20:27:40.2048196Z packaging==26.3
+2026-11-22T20:27:40.2048406Z pluggy==1.6.0
+2026-11-22T20:27:40.2048564Z pycparser==3.0
+2026-11-22T20:27:40.2048719Z Pygments==2.21.0
+2026-11-22T20:27:40.2048877Z pytest==9.1.1
+2026-11-22T20:27:40.3436536Z ##[group]Run python -m pytest -q -p no:cacheprovider
+2026-11-22T20:27:40.3436964Z [36;1mpython -m pytest -q -p no:cacheprovider[0m
+2026-11-22T20:27:40.3507170Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-11-22T20:27:40.3507496Z env:
+2026-11-22T20:27:40.3507745Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:40.3508498Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.17\x64/lib/pkgconfig
+2026-11-22T20:27:40.3508904Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:40.3509267Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:40.3509631Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.17\x64
+2026-11-22T20:27:40.3509921Z ##[endgroup]
+2026-11-22T20:27:50.6557006Z ........................................................................ [  8%]
+2026-11-22T20:27:51.2241925Z ........................................................................ [ 16%]
+2026-11-22T20:27:54.7672202Z ........................................................................ [ 24%]
+2026-11-22T20:27:57.0645959Z ........................................................................ [ 32%]
+2026-11-22T20:28:12.2327392Z ........................................................................ [ 40%]
+2026-11-22T20:28:15.8147860Z ........................................................................ [ 48%]
+2026-11-22T20:28:16.1034476Z ....s................................................................... [ 57%]
+2026-11-22T20:28:16.1483218Z ........................................................................ [ 65%]
+2026-11-22T20:28:16.5343808Z ........................................................................ [ 73%]
+2026-11-22T20:28:18.8149321Z ...................ss................sss............................s... [ 81%]
+2026-11-22T20:29:11.6181297Z ....................................s......s.s.....s.................... [ 89%]
+2026-11-22T20:29:40.0723170Z .............s...................................................s...ss. [ 97%]
+2026-11-22T20:29:47.2895106Z .s.................s                                                     [100%]
+2026-11-22T20:29:47.2895391Z 867 passed, 17 skipped in 126.41s (0:02:06)
+2026-11-22T20:29:47.4601375Z Post job cleanup.
+2026-11-22T20:29:47.5562642Z (node:6940) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T20:29:47.5563079Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-22T20:29:47.5806818Z Post job cleanup.
+2026-11-22T20:29:47.6931474Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-11-22T20:29:47.7181773Z git version 2.56.1.windows.1
+2026-11-22T20:29:47.7231426Z Temporarily overriding HOME='D:\a\_temp\c8d75b3c-1571-4dc8-a346-a6955ea946cd' before making global git config changes
+2026-11-22T20:29:47.7232006Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-22T20:29:47.7239229Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\XAUUSD-Swarm-CI-Sandbox\XAUUSD-Swarm-CI-Sandbox
+2026-11-22T20:29:47.7524241Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-11-22T20:29:47.7810176Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-22T20:29:48.2326907Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-22T20:29:48.2565714Z http.https://github.com/.extraheader
+2026-11-22T20:29:48.2600619Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-11-22T20:29:48.2873721Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-22T20:29:48.7399547Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-22T20:29:48.7678029Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-11-22T20:29:49.1881429Z Cleaning up orphan processes
+2026-11-22T20:29:49.2200338Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
