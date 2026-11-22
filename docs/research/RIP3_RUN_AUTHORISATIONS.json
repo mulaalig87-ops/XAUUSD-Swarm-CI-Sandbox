@@ -1,0 +1,4 @@
+{
+  "note": "Founder RUN authorisations for RIP-3 (OD-S9-17). Empty: NO RUN IS AUTHORISED. An entry is added only by a recorded founder decision (a heading with the same id in docs/DECISIONS.md) and names the sets it covers and the approved commit and tree. scripts/rip3_run.py refuses the registered sets 6201 / 6301 without a matching entry.",
+  "authorisations": []
+}

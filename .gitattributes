@@ -1,0 +1,3 @@
+# Result and evidence files are checked byte-for-byte against recorded SHA-256 values:
+# never convert line endings on checkout (FL-025).
+docs/results/** -text
